@@ -1,0 +1,95 @@
+@import 'variables';
+@import 'font';
+
+html,body{
+    font-family: $font-regular;
+}
+.logo{
+    width: 60px;
+    @media(max-width: 769px){
+        width: 40px;
+    }
+}
+// show menu on hover
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+.btn{
+    text-transform: capitalize;
+}
+.btn-primary{
+    background-color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover{
+        background-color:darken( $primary-color, 10%);
+        border-color: darken( $primary-color, 10%);
+    }
+}
+
+.btn-secondary{
+    background-color:white;
+    border-color: white;
+    color: $black;
+
+    &:hover{
+        background-color:darken( white, 10%);
+        border-color: darken(white, 10%);
+        color: $black;
+    }
+}
+.avatar{
+    width: 15px;
+}
+
+.home-header{
+    min-height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: rgb(214,46,106);
+    background: linear-gradient(360deg, rgba(214,46,106,1) 41%, rgba(0,0,0,1) 100%);
+
+    .big-circle{
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        transform: translate(-150px, 20px);
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: transparentize(white, .9);
+    }
+    .small-circle{
+        position: absolute;
+        left: 65%;
+        bottom: 225px;
+        transform: translate(-150px, 20px);
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background-color: transparentize(white, .9);
+    }
+
+    .home-header-title{
+        font-family: $font-black;
+        @media(min-width: 769px){
+            font-size: 60px;
+        }
+    }
+
+    .home-header-text{
+        font-family: $font-bold;
+    }
+    .home-header-image{
+        // height: 100%;
+        width: 470px;
+        @media (max-width:679px) {
+            width: 250px;
+        }
+    }
+}
