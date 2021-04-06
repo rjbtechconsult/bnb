@@ -51,8 +51,8 @@ html,body{
     display: flex;
     align-items: center;
     position: relative;
-    background: rgb(214,46,106);
-    background: linear-gradient(360deg, rgba(214,46,106,1) 41%, rgba(0,0,0,1) 100%);
+    background: $primary-color;
+    background: linear-gradient(360deg, $primary-color 41%, rgba(0,0,0,1) 100%);
 
     .big-circle{
         position: absolute;
@@ -91,5 +91,68 @@ html,body{
         @media (max-width:679px) {
             width: 250px;
         }
+    }
+}
+.no-decoration{
+    text-decoration: none !important;
+}
+.text-primary{
+    color:$primary-color !important;
+}
+.font-bold{
+    font-family: $font-bold;
+}
+.font-black{
+    font-family: $font-black;
+}
+.section-1{
+    iframe{
+        width: 100%;
+        height: 200px;
+
+        @media(min-width: 769px){
+            height: 360px;
+        }
+    }
+}
+.section-2{
+    .col-lg-4{
+        width: 400px;
+        .card {
+            // height: 200px;
+            img{
+                margin-bottom: 30px;
+            }
+            .text{
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}
+
+.section-3{
+    position:relative;
+    background-color: $primary-color;
+    color: white;
+}
+
+.section-4{
+    
+    .section-4-number{
+        width: 50px;
+        height: 50px;
+        background: $black;
+        color: white;
+        border-radius: 100%;
+        font-family: $font-black;
+        font-size: 30px;
+        display: flex;
+
+        span{
+            margin:auto;
+        }
+    }
+    .section-4-image{
+        width: 100%;
     }
 }
