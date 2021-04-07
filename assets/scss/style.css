@@ -154,6 +154,14 @@ html, body {
   font-family: "Roboto-Black";
 }
 
+.cursor {
+  cursor: pointer;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
 .section-1 iframe {
   width: 100%;
   height: 200px;
@@ -202,5 +210,62 @@ html, body {
 
 .section-4 .section-4-image {
   width: 100%;
+}
+
+@media (min-width: 769px) {
+  .section-4 .section-4-image {
+    width: 450px;
+  }
+}
+
+.section-5 .container {
+  position: relative;
+}
+
+@media (max-width: 769px) {
+  .section-5 .container .slick-slide {
+    width: 320px !important;
+  }
+}
+
+.section-5 .container #prevArrow {
+  position: absolute;
+  left: -35px;
+  top: 50%;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.section-5 .container #nextArrow {
+  position: absolute;
+  right: -35px;
+  top: 50%;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.section-5 .card {
+  width: 300px;
+}
+
+@media (min-width: 769px) {
+  .section-5 .card {
+    width: 400px;
+  }
+}
+
+.section-5 .card .image-box {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.section-5 .card .image-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
