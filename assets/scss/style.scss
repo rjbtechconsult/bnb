@@ -182,12 +182,18 @@ section{
             left: -35px;
             top: 50%;
             transform: translateY(-20px);
+            @media(max-width: 769px){
+                display: none !important;
+            }
         }
         #nextArrow{
             position: absolute;
             right: -35px;
             top: 50%;
             transform: translateY(-20px);
+            @media(max-width: 769px){
+                display: none !important;
+            }
         }
     }
     

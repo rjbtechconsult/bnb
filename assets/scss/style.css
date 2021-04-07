@@ -236,12 +236,24 @@ section {
           transform: translateY(-20px);
 }
 
+@media (max-width: 769px) {
+  .section-5 .container #prevArrow {
+    display: none !important;
+  }
+}
+
 .section-5 .container #nextArrow {
   position: absolute;
   right: -35px;
   top: 50%;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
+}
+
+@media (max-width: 769px) {
+  .section-5 .container #nextArrow {
+    display: none !important;
+  }
 }
 
 .section-5 .card {
