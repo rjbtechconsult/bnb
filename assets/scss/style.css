@@ -59,6 +59,16 @@ html, body {
   border-color: #af2254;
 }
 
+.btn-primary:active {
+  background-color: #af2254;
+  border-color: #af2254;
+}
+
+.btn-primary:focus {
+  background-color: #af2254;
+  border-color: #af2254;
+}
+
 .btn-secondary {
   background-color: white;
   border-color: white;

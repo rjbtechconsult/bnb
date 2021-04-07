@@ -28,6 +28,14 @@ html,body{
         background-color:darken( $primary-color, 10%);
         border-color: darken( $primary-color, 10%);
     }
+    &:active{
+        background-color:darken( $primary-color, 10%);
+        border-color: darken( $primary-color, 10%);
+    }
+    &:focus{
+        background-color:darken( $primary-color, 10%);
+        border-color: darken( $primary-color, 10%);
+    }
 }
 
 .btn-secondary{
