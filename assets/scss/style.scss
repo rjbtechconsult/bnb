@@ -4,6 +4,13 @@
 html,body{
     font-family: $font-regular;
 }
+body{
+    padding-top: 80px;
+}
+.main-nav.active{
+    transition: .5s;
+    box-shadow: $shadow;
+}
 .logo{
     width: 60px;
     @media(max-width: 769px){
