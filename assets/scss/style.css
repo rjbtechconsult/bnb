@@ -235,7 +235,7 @@ section {
 
 @media (min-width: 769px) {
   .section-4 .section-4-image {
-    width: 450px;
+    width: 100%;
   }
 }
 
